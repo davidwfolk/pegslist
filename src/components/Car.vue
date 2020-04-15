@@ -17,7 +17,7 @@
     },
     methods: {
       selectCar() {
-        this.$=
+        this.$store.commit("setActiveCar", {})
         this.$router.push({
           name: "CarDetails",
           params: {carId: this.carData._id}

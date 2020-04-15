@@ -19,7 +19,7 @@ const routes = [
   },
   {
     path: '/cars/:carId',
-    name: 'CarsDetails',
+    name: 'CarDetails',
     //@ts-ignore
     component: () => import(/* webpackChunkName: "car-details" */ '../pages/CarDetails.vue')
   },
