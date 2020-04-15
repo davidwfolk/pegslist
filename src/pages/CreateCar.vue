@@ -1,5 +1,5 @@
 <template>
-  <div class="create-car border col-12">
+  <div class="create-car border col-6 m-auto">
     <form @submit.prevent="createCar()">
       <div class="form-group">
         <label for="make">Make</label>

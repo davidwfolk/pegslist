@@ -2,7 +2,6 @@
   <div class="cars col-12">
     <!-- i will build a bunch of car components for each car -->
     <div class="row">
-      <create-car></create-car>
       <car v-for="car in cars" :carData="car" :key="car._id"></car>
       <!-- car deetz go here -->
     </div>
@@ -11,7 +10,7 @@
 
 <script>
   import Car from '../components/Car.vue'
-  import CreateCar from '../components/CreateCar.vue'
+  // import CreateCar from '../components/CreateCar.vue'
   export default {
     name: 'cars',
     data() {
@@ -29,8 +28,7 @@
     },
     methods: {},
     components: {
-      Car,
-      CreateCar
+      Car
     }
   }
 </script>

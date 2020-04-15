@@ -1,5 +1,5 @@
 <template>
-  <div class="car border col-3">
+  <div class="car border col-3" @click="selectCar()">
     <img class="img-fluid" :src="carData.imgUrl" alt="" srcset="">
     <h3><strong>{{carData.make}}</strong></h3>
     <h5>{{carData.model}}</h5>
@@ -19,14 +19,11 @@
     methods: {
       selectCar() {
         this.$store.commit("setActiveCar", {})
-        this.push({
+        this.$router.push({
           name: "CarDetails",
           params: {carId: this.carData._id}
         })
       },
-      deleteCar() {
-        this.$store.dispatch("deleteCar", this.carData._id)
-      }
     }
   }
 </script>

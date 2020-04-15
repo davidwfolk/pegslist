@@ -28,17 +28,17 @@
         <a class="nav-link disabled" href="#">Disabled</a>
       </li> -->
     </ul>
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown button
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown open">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+              Create a Post
+            </button>
+        <div class="dropdown-menu" aria-labelledby="triggerId">
+          <router-link to='/createcar'>Post Your Car</router-link>
+          <button class="dropdown-item disabled" href="#">Disabled action</button>
         </div>
       </div>
-  </div>
+    </div>
 </nav>
 </template>
 

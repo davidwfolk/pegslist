@@ -33,6 +33,16 @@ const routes = [
         // @ts-ignore
       return import(/* webpackChunkName: "about" */ '../pages/About.vue')
     }
+  },
+  {
+    path: '/CreateCar',
+    name: 'CreateCar',
+    //@ts-ignore
+    component: () => import(/* webpackChunkName: "create-car" */ '../pages/CreateCar.vue')
+  },
+  {
+    path: '*',
+    redirect: '/'
   }
 ]
 
