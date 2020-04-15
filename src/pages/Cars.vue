@@ -3,15 +3,15 @@
     <!-- i will build a bunch of car components for each car -->
     <div class="row">
       <create-car></create-car>
-      <car v-for="car in cars" :carData="car"></car>
+      <car v-for="car in cars" :carData="car" :key="car._id"></car>
       <!-- car deetz go here -->
     </div>
   </div>
 </template>
 
 <script>
-  import Car from './Car.vue'
-  import CreateCar from './CreateCar.vue'
+  import Car from '../components/Car.vue'
+  import CreateCar from '../components/CreateCar.vue'
   export default {
     name: 'cars',
     data() {
