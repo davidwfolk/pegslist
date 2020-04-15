@@ -22,7 +22,7 @@ export default {
     return {};
   },
   created() {
-    this.$store.dispatch("getCar", this.$route.params.carId);
+    this.$store.dispatch("getCar", this.$route.params._id)
   },
   computed: {
     car() {

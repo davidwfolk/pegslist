@@ -12,7 +12,7 @@
   import Car from '../components/Car.vue'
   // import CreateCar from '../components/CreateCar.vue'
   export default {
-    name: 'cars',
+    name: "cars",
     data() {
       return {
 
