@@ -34,7 +34,7 @@ export default new Vuex.Store({
     },
     async getCar({ commit, dispatch }, carId) {
       try {
-        let res = await _api.get('cars/', carId)
+        let res = await _api.get('cars/' + carId)
         console.log(res.data.data)
         commit('setActiveCar', res.data.data)
       } catch (error) {
